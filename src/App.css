@@ -1,38 +1,92 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #7f7fd5, #91eae4);
+}
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 1.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 1.2rem;
+  color: black;
+  font-weight: 300;
+  display: inline-block;
+  font-size: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.post {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 4rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.card {
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 7px 29px 0px solid rgb(251, 237, 237);
+}
+.card-btn {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.card-btn a {
+  color: rgb(72, 168, 252);
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.card-btn a:last-child {
+  color: red;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  min-width: 12rem;
+  width: 20vw;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 19px;
+  box-shadow: rgb(248, 239, 239) 0px 2px 2px 3px;
+  outline: none;
+  text-decoration: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn,
+.btn2 {
+  background-color: black;
+  color: wheat;
+  padding: 8px;
+  cursor: pointer;
+}
+.p {
+  font-weight: bold;
 }
