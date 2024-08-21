@@ -1,7 +1,7 @@
 import { createContext, useContext, useReducer, useEffect } from "react";
 import reducer from "./Reducer";
 
-let link = "http://hn.algolia.com/api/v1/search?query=";
+let link = "https://hn.algolia.com/api/v1/search?query=";
 const initialState = {
   hits: [],
   nbpages: 50,
